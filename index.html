@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>계산기</title>
+    <meta name = "description" content="portfolio" />
+    <meta name = "author" content = "jonggwon" />
+    <!-- OG (Open Graph Data) 웹사이트 소개할 때 유용, 검색엔진-->
+    <meta property="og:title" content="포트폴리오" />
+    <meta property="og:tpye" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생선된 이미지 URL" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+
+    <!--Font Awesome icon-->
+    <script src="https://kit.fontawesome.com/c6ff0ca5bd.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- javascript -->
+    <script src = "java.js" defer></script>
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <form name="forms">
+        <input tpye="text" name="output" class = "sum" readonly>
+        <div class = "cal">
+        <input type="button" class = "white" value="C" onclick="document.forms.output.value=''">
+        <input type="button" class = "white" value="+/-" onclick="document.forms.output.value+='+/-'">
+        <input type="button" class = "white" value="%" onclick="document.forms.output.value+='%'">
+        <input type="button" class = "orange" value="÷" onclick="document.forms.output.value+='/'">
+        <input type="button" class = "gray" value="7" onclick="document.forms.output.value+='7'">
+        <input type="button" class = "gray" value="8" onclick="document.forms.output.value+='8'">
+        <input type="button" class = "gray" value="9" onclick="document.forms.output.value+='9'">
+        <input type="button" class = "orange" value="×" onclick="document.forms.output.value+='*'">
+        <input type="button" class = "gray" value="4" onclick="document.forms.output.value+='4'">
+        <input type="button" class = "gray" value="5" onclick="document.forms.output.value+='5'">
+        <input type="button" class = "gray" value="6" onclick="document.forms.output.value+='6'"> 
+        <input type="button" class = "orange" value="-" onclick="document.forms.output.value+='-'">
+        <input type="button" class = "gray" value="1" onclick="document.forms.output.value+='1'">
+        <input type="button" class = "gray" value="2" onclick="document.forms.output.value+='2'">
+        <input type="button" class = "gray" value="3" onclick="document.forms.output.value+='3'">
+        <input type="button" class = "orange" value="+" onclick="document.forms.output.value+='+'">
+        <input type="button" class = "grayy" value="0" onclick="document.forms.output.value+='0'">
+        <input type="button" class = "gray" value="." onclick="document.forms.output.value+='.'">
+        <input type="button" class = "orange" value="=" onclick="document.forms.output.value=eval(document.forms.output.value)">
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+
+
